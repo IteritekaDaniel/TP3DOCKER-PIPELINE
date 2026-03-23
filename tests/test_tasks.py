@@ -16,9 +16,9 @@ def test_add_task():
 def test_multiple_tasks():
     add_task("Learn CI")
     add_task("Learn DevOps")
-    tasks = get_tasks()
-    assert "Learn CI" in tasks
-    assert "Learn DevOps" in tasks
+    tasks_list = get_tasks()
+    assert "Learn CI" in tasks_list
+    assert "Learn DevOps" in tasks_list
 
 def test_delete_task():
     add_task("Learn Docker")
